@@ -1,0 +1,1269 @@
+  [1m[35m (511.2ms)[0m  [1m[35mCREATE DATABASE "devpitch_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (417.3ms)[0m  [1m[35mCREATE DATABASE "devpitch_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (47.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6113335974040364265)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to User (20190918205636)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (2.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190918205636"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (2.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-18 20:56:57.998429"], ["updated_at", "2019-09-18 20:56:57.998429"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6113335974040364265)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6113335974040364265)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190918205719)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (15.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190918205719_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190918205719"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to Projects (20190918210046)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190918210046"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6113335974040364265)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6113335974040364265)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to Projects (20190918210046)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (2.0ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190918210046"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190918205719)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (6.5ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190918205719"]]
+  ↳ bin/rails:9
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to User (20190918205636)
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190918205636"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6113335974040364265)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2019-09-18 17:13:17 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lisaantwiadjei/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6113335974040364265)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190918210911)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (37.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190918210911_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190918210911"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6113335974040364265)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started POST "/api/v1/users" for ::1 at 2019-09-18 17:17:21 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lisaantwiadjei/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:2:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+Started POST "/api/v1/users" for ::1 at 2019-09-18 17:18:14 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lisaantwiadjei/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"guy", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4
+  [1m[36mUser Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "guy"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:4
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "guy"], ["password_digest", "$2a$12$7UNBa1GuNlA/BPro8N6cr.xLdV3N4DKRVO0yqNQdf3ePPLrAvfQGO"], ["created_at", "2019-09-18 21:18:15.266783"], ["updated_at", "2019-09-18 21:18:15.266783"]]
+  ↳ app/controllers/api/v1/users_controller.rb:4
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) AND "users"."id" != $2 LIMIT $3[0m  [["username", "guy"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+Completed 201 Created in 252ms (Views: 0.7ms | ActiveRecord: 14.0ms)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-09-18 17:28:31 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"lisa01", "password"=>"[FILTERED]"}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "lisa01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "lisa01"], ["password_digest", "$2a$12$Gd2V9DksOKIqQmiAuoDZTuBuus69Sg13Rrr5Tr6KdoopAvf5wD5Ty"], ["created_at", "2019-09-18 21:28:31.797159"], ["updated_at", "2019-09-18 21:28:31.797159"]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) AND "users"."id" != $2 LIMIT $3[0m  [["username", "lisa01"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+Completed 500 Internal Server Error in 407ms (ActiveRecord: 36.1ms)
+
+
+  
+NoMethodError (undefined method `encode_token' for #<Api::V1::UsersController:0x00007fc35fb85950>
+Did you mean?  decoded_token):
+  
+app/controllers/api/v1/users_controller.rb:7:in `create'
+Started POST "/api/v1/users" for ::1 at 2019-09-18 17:29:04 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"lisa01", "password"=>"[FILTERED]"}}
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "lisa01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[35m (2.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "lisa01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+Completed 406 Not Acceptable in 275ms (Views: 0.2ms | ActiveRecord: 10.3ms)
+
+
+Started POST "/api/v1/users" for ::1 at 2019-09-18 17:29:19 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"jane01", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "jane01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Create (3.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "jane01"], ["password_digest", "$2a$12$8Etos.5xGM23KaIazexxuuPvldFSWtZEPL4s/Dq2OL6kvqiLMEtlO"], ["created_at", "2019-09-18 21:29:19.519032"], ["updated_at", "2019-09-18 21:29:19.519032"]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) AND "users"."id" != $2 LIMIT $3[0m  [["username", "jane01"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+Completed 500 Internal Server Error in 252ms (ActiveRecord: 4.9ms)
+
+
+  
+NameError (uninitialized constant ApplicationController::JWT):
+  
+app/controllers/application_controller.rb:5:in `encode_token'
+app/controllers/api/v1/users_controller.rb:7:in `create'
+Started POST "/api/v1/users" for ::1 at 2019-09-18 17:32:24 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"jane02", "password"=>"[FILTERED]"}}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "jane02"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "jane02"], ["password_digest", "$2a$12$MUTVbIBS9pAKFHl/07syzuHTWD5IcPlzb8aAu6xMLCFaO39BUBRAq"], ["created_at", "2019-09-18 21:32:24.991473"], ["updated_at", "2019-09-18 21:32:24.991473"]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) AND "users"."id" != $2 LIMIT $3[0m  [["username", "jane02"], ["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+Completed 500 Internal Server Error in 259ms (ActiveRecord: 10.2ms)
+
+
+  
+NameError (uninitialized constant ApplicationController::JWT):
+  
+app/controllers/application_controller.rb:8:in `encode_token'
+app/controllers/api/v1/users_controller.rb:7:in `create'
+Started POST "/api/v1/users" for ::1 at 2019-09-18 17:44:08 -0400
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"jane03", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Exists (1.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "jane03"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "jane03"], ["password_digest", "$2a$12$24j9k0Um.Yq7ec5Y/Wmj.uYIS7pW/HDehpyP0YtUg04zHAIAOiwnq"], ["created_at", "2019-09-18 21:44:08.594244"], ["updated_at", "2019-09-18 21:44:08.594244"]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) AND "users"."id" != $2 LIMIT $3[0m  [["username", "jane03"], ["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+Completed 500 Internal Server Error in 262ms (ActiveRecord: 10.9ms)
+
+
+  
+NameError (uninitialized constant ApplicationController::JWT):
+  
+app/controllers/application_controller.rb:8:in `encode_token'
+app/controllers/api/v1/users_controller.rb:7:in `create'
+Started POST "/api/v1/users" for ::1 at 2019-09-18 17:47:20 -0400
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lisaantwiadjei/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"jane04", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Exists (1.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "jane04"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "jane04"], ["password_digest", "$2a$12$lT8shp2w9.p3eUcEvxOe3edDq3BaiFRE3A5CZWk7ebwZ6Laa82qEi"], ["created_at", "2019-09-18 21:47:21.118436"], ["updated_at", "2019-09-18 21:47:21.118436"]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) AND "users"."id" != $2 LIMIT $3[0m  [["username", "jane04"], ["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+Completed 201 Created in 247ms (Views: 0.4ms | ActiveRecord: 16.6ms)
+
+
+  [1m[36mUser Load (27.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (3.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (2.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  [1m[36mUser Create (7.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "harum01"], ["password_digest", "$2a$12$NsaTMUVnrDOM6nSQtMGJjehE/hU32wHvPXfcb6YmGIxgMwZzE8KS."], ["created_at", "2019-09-19 16:19:08.057144"], ["updated_at", "2019-09-19 16:19:08.057144"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/api/v1/login" for ::1 at 2019-09-19 12:20:36 -0400
+  [1m[35m (7.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lisaantwiadjei/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"username"=>"harum01", "password"=>"[FILTERED]", "auth"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}
+Completed 400 Bad Request in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/api/v1/auth_controller.rb:21:in `user_login_params'
+app/controllers/api/v1/auth_controller.rb:9:in `create'
+Started POST "/api/v1/login" for ::1 at 2019-09-19 12:24:10 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 401 Unauthorized in 354ms (Views: 2.3ms | ActiveRecord: 8.2ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 12:26:25 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 401 Unauthorized in 24118ms (Views: 0.2ms | ActiveRecord: 5.9ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 12:27:03 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 401 Unauthorized in 235ms (Views: 0.2ms | ActiveRecord: 5.8ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 12:27:28 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 401 Unauthorized in 235ms (Views: 0.1ms | ActiveRecord: 5.8ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 12:28:59 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 401 Unauthorized in 2050097ms (Views: 16.8ms | ActiveRecord: 4.4ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 13:03:09 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"test", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"test", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 500 Internal Server Error in 8032ms (ActiveRecord: 6.5ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/api/v1/auth_controller.rb:11:in `create'
+Started POST "/api/v1/login" for ::1 at 2019-09-19 13:03:32 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"test", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"test", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 401 Unauthorized in 41280ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 13:04:23 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 16588ms (Views: 5.8ms | ActiveRecord: 15.4ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 13:58:10 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 5371ms (Views: 5.0ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 13:58:58 -0400
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lisaantwiadjei/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 5679ms (Views: 0.5ms | ActiveRecord: 7.0ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 14:03:23 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 372558ms (Views: 7.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 14:09:36 -0400
+Started POST "/api/v1/login" for ::1 at 2019-09-19 14:09:36 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 3400ms (Views: 0.5ms | ActiveRecord: 1.9ms)
+
+
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 390451ms (Views: 7.7ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 14:16:17 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 270ms (Views: 0.4ms | ActiveRecord: 34.8ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 14:19:26 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 245ms (Views: 4.4ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 14:34:16 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 624ms (Views: 4.0ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 14:36:36 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 256ms (Views: 4.7ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 14:37:22 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 236ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 14:42:58 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 240ms (Views: 2.3ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 14:43:18 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 240ms (Views: 1.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 14:43:20 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 230ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 14:44:05 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 252ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 14:44:07 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 237ms (Views: 2.6ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 14:44:14 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 235ms (Views: 0.5ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 14:44:15 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 234ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 14:44:15 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 225ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 14:44:15 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 252ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 14:44:16 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 227ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 14:44:16 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 229ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 14:44:16 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 227ms (Views: 2.2ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 14:45:37 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 245ms (Views: 2.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 14:47:04 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 241ms (Views: 3.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 16:51:00 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 263ms (Views: 5.1ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 16:55:04 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 265ms (Views: 3.9ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/api/v1/login" for 127.0.0.1 at 2019-09-19 16:57:18 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 260ms (Views: 4.8ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/api/v1/login" for 127.0.0.1 at 2019-09-19 17:01:21 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 256ms (Views: 7.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/v1/login" for 127.0.0.1 at 2019-09-19 17:02:21 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 239ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/login" for 127.0.0.1 at 2019-09-19 17:02:38 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 238ms (Views: 3.4ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 17:03:01 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 244ms (Views: 2.8ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 17:49:56 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (14.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 279ms (Views: 3.4ms | ActiveRecord: 14.4ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 17:53:20 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 241ms (Views: 3.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 17:54:49 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 255ms (Views: 2.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 18:00:41 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 249ms (Views: 4.4ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 18:01:53 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 231ms (Views: 2.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 18:02:40 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 231ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 18:04:49 -0400
+  [1m[35m (6.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lisaantwiadjei/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 260ms (Views: 0.9ms | ActiveRecord: 21.4ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 18:06:11 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 221ms (Views: 0.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 18:06:48 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 228ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 18:08:16 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 220ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 18:09:20 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 220ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 18:10:11 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 240ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 18:16:07 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 226ms (Views: 1.8ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 18:16:41 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 221ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 18:18:05 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 222ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 18:20:02 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 227ms (Views: 2.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 18:25:59 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 219ms (Views: 0.3ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-19 18:27:24 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 219ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-20 13:06:49 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 245ms (Views: 2.7ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-20 13:08:49 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 225ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-20 13:10:14 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 223ms (Views: 2.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-20 13:10:26 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 223ms (Views: 3.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-20 13:10:58 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 227ms (Views: 1.3ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-20 13:11:34 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 217ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-20 13:12:53 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 232ms (Views: 2.9ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/v1/signup" for ::1 at 2019-09-20 15:36:11 -0400
+Processing by Api::V1::UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Exists (34.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+Completed 406 Not Acceptable in 580ms (Views: 0.6ms | ActiveRecord: 75.4ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-20 15:37:42 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 256ms (Views: 3.6ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/api/v1/signup" for ::1 at 2019-09-20 15:39:47 -0400
+Processing by Api::V1::UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "lisaa01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Create (22.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "lisaa01"], ["password_digest", "$2a$12$e5HT3gM89zBElk9N2eH3AuHTJmO/KMnV101zaGBWQ0e1ES6MMQ2fm"], ["created_at", "2019-09-20 19:39:47.640102"], ["updated_at", "2019-09-20 19:39:47.640102"]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) AND "users"."id" != $2 LIMIT $3[0m  [["username", "lisaa01"], ["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+Completed 201 Created in 285ms (Views: 0.4ms | ActiveRecord: 30.9ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-20 15:44:24 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 253ms (Views: 0.9ms | ActiveRecord: 7.0ms)
+
+
+Started POST "/api/v1/signup" for ::1 at 2019-09-20 15:45:28 -0400
+Processing by Api::V1::UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "lisaa01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "lisaa01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+Completed 406 Not Acceptable in 336ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/v1/signup" for ::1 at 2019-09-20 15:46:38 -0400
+Processing by Api::V1::UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "lisaa01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "lisaa01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+Completed 406 Not Acceptable in 243ms (Views: 0.1ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-20 15:46:47 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "lisaa01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 259ms (Views: 0.3ms | ActiveRecord: 0.8ms)
+
+
+  [1m[35m (7.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6113335974040364265)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateProjects (20190920194932)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6113335974040364265)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6113335974040364265)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190918210911)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (52.9ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190918210911"]]
+  ↳ bin/rails:9
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6113335974040364265)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6113335974040364265)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190918210911)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (21.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190918210911_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190918210911"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateProjects (20190920194932)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (16.5ms)[0m  [1m[35mCREATE TABLE "projects" ("id" bigserial primary key, "user_id" bigint, "name" character varying, "start_date" date, "end_date" date, "description" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_b872a6760a"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190920194932_create_projects.rb:3
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE  INDEX  "index_projects_on_user_id" ON "projects"  ("user_id")[0m
+  ↳ db/migrate/20190920194932_create_projects.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190920194932"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateLanguages (20190920195047)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "languages" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190920195047_create_languages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190920195047"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateProjectLanguages (20190920195105)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "project_languages" ("id" bigserial primary key, "project_id" bigint, "language_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_0102f80ebc"
+FOREIGN KEY ("project_id")
+  REFERENCES "projects" ("id")
+, CONSTRAINT "fk_rails_7d4ec39339"
+FOREIGN KEY ("language_id")
+  REFERENCES "languages" ("id")
+)[0m
+  ↳ db/migrate/20190920195105_create_project_languages.rb:3
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX  "index_project_languages_on_project_id" ON "project_languages"  ("project_id")[0m
+  ↳ db/migrate/20190920195105_create_project_languages.rb:3
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_project_languages_on_language_id" ON "project_languages"  ("language_id")[0m
+  ↳ db/migrate/20190920195105_create_project_languages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190920195105"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6113335974040364265)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mLanguage Create (1.4ms)[0m  [1m[32mINSERT INTO "languages" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Java"], ["created_at", "2019-09-20 19:58:46.260572"], ["updated_at", "2019-09-20 19:58:46.260572"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mLanguage Create (0.3ms)[0m  [1m[32mINSERT INTO "languages" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "C"], ["created_at", "2019-09-20 19:58:46.263943"], ["updated_at", "2019-09-20 19:58:46.263943"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mLanguage Create (0.4ms)[0m  [1m[32mINSERT INTO "languages" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Python"], ["created_at", "2019-09-20 19:58:46.265669"], ["updated_at", "2019-09-20 19:58:46.265669"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mLanguage Create (0.3ms)[0m  [1m[32mINSERT INTO "languages" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "C++"], ["created_at", "2019-09-20 19:58:46.267350"], ["updated_at", "2019-09-20 19:58:46.267350"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mLanguage Create (0.8ms)[0m  [1m[32mINSERT INTO "languages" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Visual Basic .NET"], ["created_at", "2019-09-20 19:58:46.269032"], ["updated_at", "2019-09-20 19:58:46.269032"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mLanguage Create (0.3ms)[0m  [1m[32mINSERT INTO "languages" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "JavaScript"], ["created_at", "2019-09-20 19:58:46.271442"], ["updated_at", "2019-09-20 19:58:46.271442"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mLanguage Create (0.3ms)[0m  [1m[32mINSERT INTO "languages" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "C#"], ["created_at", "2019-09-20 19:58:46.273286"], ["updated_at", "2019-09-20 19:58:46.273286"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mLanguage Create (0.4ms)[0m  [1m[32mINSERT INTO "languages" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "PHP"], ["created_at", "2019-09-20 19:58:46.275177"], ["updated_at", "2019-09-20 19:58:46.275177"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mLanguage Create (0.4ms)[0m  [1m[32mINSERT INTO "languages" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "SQL"], ["created_at", "2019-09-20 19:58:46.276916"], ["updated_at", "2019-09-20 19:58:46.276916"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mLanguage Create (0.3ms)[0m  [1m[32mINSERT INTO "languages" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Objective-C"], ["created_at", "2019-09-20 19:58:46.278688"], ["updated_at", "2019-09-20 19:58:46.278688"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mLanguage Create (0.9ms)[0m  [1m[32mINSERT INTO "languages" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Assembly Language"], ["created_at", "2019-09-20 19:58:46.280442"], ["updated_at", "2019-09-20 19:58:46.280442"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mLanguage Create (0.4ms)[0m  [1m[32mINSERT INTO "languages" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "MATLAB"], ["created_at", "2019-09-20 19:58:46.282702"], ["updated_at", "2019-09-20 19:58:46.282702"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mLanguage Create (0.8ms)[0m  [1m[32mINSERT INTO "languages" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "PERL"], ["created_at", "2019-09-20 19:58:46.284517"], ["updated_at", "2019-09-20 19:58:46.284517"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mLanguage Create (0.3ms)[0m  [1m[32mINSERT INTO "languages" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Object Pascal"], ["created_at", "2019-09-20 19:58:46.286660"], ["updated_at", "2019-09-20 19:58:46.286660"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mLanguage Create (0.3ms)[0m  [1m[32mINSERT INTO "languages" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "R"], ["created_at", "2019-09-20 19:58:46.288238"], ["updated_at", "2019-09-20 19:58:46.288238"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mLanguage Create (0.3ms)[0m  [1m[32mINSERT INTO "languages" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Ruby"], ["created_at", "2019-09-20 19:58:46.289875"], ["updated_at", "2019-09-20 19:58:46.289875"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mLanguage Create (0.3ms)[0m  [1m[32mINSERT INTO "languages" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Visual Basic"], ["created_at", "2019-09-20 19:58:46.291491"], ["updated_at", "2019-09-20 19:58:46.291491"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mLanguage Create (0.3ms)[0m  [1m[32mINSERT INTO "languages" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Go"], ["created_at", "2019-09-20 19:58:46.293062"], ["updated_at", "2019-09-20 19:58:46.293062"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mLanguage Create (0.3ms)[0m  [1m[32mINSERT INTO "languages" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Groovy"], ["created_at", "2019-09-20 19:58:46.294736"], ["updated_at", "2019-09-20 19:58:46.294736"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mLanguage Create (0.3ms)[0m  [1m[32mINSERT INTO "languages" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "SWIFT"], ["created_at", "2019-09-20 19:58:46.296317"], ["updated_at", "2019-09-20 19:58:46.296317"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mLanguage Load (0.6ms)[0m  [1m[34mSELECT  "languages".* FROM "languages" LIMIT $1[0m  [["LIMIT", 11]]
+Started POST "/api/v1/login" for ::1 at 2019-09-20 16:57:56 -0400
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lisaantwiadjei/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "lisaa01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 401 Unauthorized in 17ms (Views: 0.4ms | ActiveRecord: 7.9ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-20 16:58:04 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "lisaa01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 401 Unauthorized in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-20 16:59:30 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "lisaa01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 401 Unauthorized in 5ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-20 16:59:56 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"harum01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harum01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 401 Unauthorized in 3ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/api/v1/signup" for ::1 at 2019-09-20 17:00:38 -0400
+Processing by Api::V1::UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) LIMIT $2[0m  [["username", "lisaa01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "lisaa01"], ["password_digest", "$2a$12$yhMiWf1dqpWwE0YvUcrCneZ.kNLXG2aoV33rDqbnz0kt0.clwVate"], ["created_at", "2019-09-20 21:00:38.502919"], ["updated_at", "2019-09-20 21:00:38.502919"]]
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/users_controller.rb:5
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER($1) AND "users"."id" != $2 LIMIT $3[0m  [["username", "lisaa01"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:6
+Completed 201 Created in 284ms (Views: 0.8ms | ActiveRecord: 23.0ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-20 17:00:51 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "lisaa01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 226ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-20 17:01:29 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "lisaa01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 230ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-20 17:03:13 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "lisaa01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 233ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-20 17:09:18 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "lisaa01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 228ms (Views: 2.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-20 17:11:48 -0400
+  
+SyntaxError (/Users/lisaantwiadjei/Desktop/Flatiron-School/Mod-5/Week-12/DevPitch/devpitch-backend/app/controllers/api/v1/auth_controller.rb:12: syntax error, unexpected ',', expecting =>
+...er.id, username=@user.username, jwt: token }, status: :accep...
+...                              ^):
+  
+app/controllers/api/v1/auth_controller.rb:12: syntax error, unexpected ',', expecting =>
+Started POST "/api/v1/login" for ::1 at 2019-09-20 17:12:22 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "lisaa01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 247ms (Views: 1.9ms | ActiveRecord: 11.9ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-20 17:13:04 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "lisaa01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 224ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-20 17:13:30 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "lisaa01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 329ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-09-20 17:14:55 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "lisaa01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+Completed 202 Accepted in 243ms (Views: 0.4ms | ActiveRecord: 8.1ms)
+
+
