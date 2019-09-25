@@ -22,13 +22,16 @@ class Api::V1::UsersController < ApplicationController
 
     def user_serializer_options 
       {:include => [
-        :projects => {:except=>[:password_digest, :created_at, :updated_at],
-        :include => {
-          :images => {
-            :except => [:created_at, :updated_at]
+        :projects => {:except =>  [:created_at, :updated_at],
+          :include => {
+            :images => {
+              :except => [:created_at, :updated_at]
+            },
+            :languages => {
+              :except => [:created_at, :updated_at]
+            }
           }
-        }}
-        ],
-    :except => [:created_at, :updated_at]}
+        }
+      ], :except =>[:created_at, :updated_at] }
     end
 end
