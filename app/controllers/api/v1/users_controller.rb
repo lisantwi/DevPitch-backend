@@ -12,6 +12,7 @@ class Api::V1::UsersController < ApplicationController
       end
 
       def index 
+
         render json: @user.to_json(user_serializer_options)
       end
 
@@ -21,7 +22,7 @@ class Api::V1::UsersController < ApplicationController
     end
 
     def user_serializer_options 
-      {:include => [
+      {:include => {
         :projects => {:except =>  [:created_at, :updated_at],
           :include => {
             :images => {
@@ -32,6 +33,6 @@ class Api::V1::UsersController < ApplicationController
             }
           }
         }
-      ], :except =>[:created_at, :updated_at] }
+      }, :except =>[:created_at, :updated_at] }
     end
 end
