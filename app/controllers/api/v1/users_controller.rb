@@ -5,7 +5,7 @@ class Api::V1::UsersController < ApplicationController
         @user = User.create(user_params)
         if @user.valid?
           @token = encode_token(user_id: @user.id)
-          render json: { jwt: @token }, status: :created
+          render json: { jwt: @token, user: @user }, status: :created
         else
           render json: { error: 'failed to create user' }, status: :not_acceptable
         end
@@ -20,19 +20,21 @@ class Api::V1::UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:username, :password)
     end
-
     def user_serializer_options 
       {:include => {
-        :projects => {:except =>  [:created_at, :updated_at],
-          :include => {
-            :images => {
-              :except => [:created_at, :updated_at]
-            },
-            :languages => {
-              :except => [:created_at, :updated_at]
-            }
+        :projects => {:except=>[:created_at, :updated_at],
+        :include => {
+          :images => {
+            :except => [:created_at, :updated_at]
+          },
+          :languages => {
+            :except => [:created_at, :updated_at]
+          },
+          :tasks => {
+            :except => [:created_at, :updated_at]
           }
-        }
-      }, :except =>[:created_at, :updated_at] }
+        }}
+      },
+    :except => [:created_at, :updated_at]}
     end
 end

@@ -22,6 +22,12 @@ class Api::V1::AuthController < ApplicationController
           :include => {
             :images => {
               :except => [:created_at, :updated_at]
+            },
+            :languages => {
+              :except => [:created_at, :updated_at]
+            },
+            :tasks => {
+              :except => [:created_at, :updated_at]
             }
           }}
         },
