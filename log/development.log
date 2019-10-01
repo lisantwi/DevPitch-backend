@@ -17095,3 +17095,574 @@ Processing by Api::V1::ProjectsController#update as */*
 Completed 200 OK in 37ms (Views: 0.1ms | ActiveRecord: 9.0ms)
 
 
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 09:08:43 -0400
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lisaantwiadjei/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (4.1ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 53ms (Views: 1.6ms | ActiveRecord: 26.2ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 09:09:16 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.4ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 09:09:25 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.3ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 09:10:29 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.3ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 09:10:40 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.3ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 09:13:52 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.5ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 7ms (Views: 1.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 09:14:37 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.4ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 21ms (Views: 1.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 09:17:09 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.3ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 5ms (Views: 1.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 09:18:03 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.6ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 11ms (Views: 1.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 12:50:21 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (1.9ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 29ms (Views: 5.5ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 12:50:29 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.5ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 11ms (Views: 3.3ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/api/v1/tasks/47" for ::1 at 2019-10-01 12:56:19 -0400
+Processing by Api::V1::TasksController#update as */*
+  Parameters: {"is_complete"=>true, "id"=>"47", "task"=>{"is_complete"=>true}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mTask Load (3.7ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:11
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[36mProject Load (2.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 105], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[36mTask Update (12.2ms)[0m  [1m[33mUPDATE "tasks" SET "is_complete" = $1 WHERE "tasks"."id" = $2[0m  [["is_complete", true], ["id", 47]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+Completed 404 Not Found in 31612ms (ActiveRecord: 75.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project without an ID):
+Started PATCH "/api/v1/tasks/47" for ::1 at 2019-10-01 12:56:50 -0400
+Started PATCH "/api/v1/tasks/47" for ::1 at 2019-10-01 12:56:50 -0400
+  
+app/controllers/api/v1/tasks_controller.rb:14:in `update'
+Processing by Api::V1::TasksController#update as */*
+  Parameters: {"is_complete"=>true, "id"=>"47", "task"=>{"is_complete"=>true}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mTask Load (0.9ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:11
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[36mProject Load (1.7ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 105], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+Completed 404 Not Found in 3006ms (ActiveRecord: 8.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project without an ID):
+  
+app/controllers/api/v1/tasks_controller.rb:14:in `update'
+Processing by Api::V1::TasksController#update as */*
+  Parameters: {"is_complete"=>true, "id"=>"47", "task"=>{"is_complete"=>true}}
+  [1m[36mUser Load (20.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mTask Load (1.0ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[36mProject Load (1.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 105], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+Completed 404 Not Found in 4697ms (ActiveRecord: 32.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project without an ID):
+  
+app/controllers/api/v1/tasks_controller.rb:14:in `update'
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 12:57:38 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.9ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 75ms (Views: 3.5ms | ActiveRecord: 29.8ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 12:57:42 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (10.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.9ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 16ms (Views: 2.1ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 12:58:31 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (1.3ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 22ms (Views: 3.7ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-10-01 12:58:41 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (6.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "lisaa01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:12
+  [1m[36mImage Load (1.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/auth_controller.rb:12
+  [1m[36mLanguage Load (1.9ms)[0m  [1m[34mSELECT "languages".* FROM "languages" INNER JOIN "project_languages" ON "languages"."id" = "project_languages"."language_id" WHERE "project_languages"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/auth_controller.rb:12
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/auth_controller.rb:12
+Completed 202 Accepted in 430ms (Views: 3.7ms | ActiveRecord: 27.8ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-10-01 12:58:41 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:16
+  [1m[36mImage Load (0.9ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/users_controller.rb:16
+  [1m[36mLanguage Load (0.4ms)[0m  [1m[34mSELECT "languages".* FROM "languages" INNER JOIN "project_languages" ON "languages"."id" = "project_languages"."language_id" WHERE "project_languages"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/users_controller.rb:16
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/users_controller.rb:16
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 12:58:46 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.5ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 19ms (Views: 11.2ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/api/v1/tasks/47" for ::1 at 2019-10-01 12:59:03 -0400
+Processing by Api::V1::TasksController#update as */*
+  Parameters: {"is_complete"=>false, "id"=>"47", "task"=>{"is_complete"=>false}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 105], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[36mTask Update (0.6ms)[0m  [1m[33mUPDATE "tasks" SET "is_complete" = $1 WHERE "tasks"."id" = $2[0m  [["is_complete", false], ["id", 47]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 105], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:13
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:14
+  [1m[36mLanguage Load (0.4ms)[0m  [1m[34mSELECT "languages".* FROM "languages" INNER JOIN "project_languages" ON "languages"."id" = "project_languages"."language_id" WHERE "project_languages"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:14
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:14
+Completed 200 OK in 78ms (Views: 0.1ms | ActiveRecord: 26.6ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 12:59:14 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.5ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 19ms (Views: 2.2ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/api/v1/login" for ::1 at 2019-10-01 13:00:37 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}, "auth"=>{"user"=>{"username"=>"lisaa01", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "lisaa01"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:9
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/auth_controller.rb:12
+  [1m[36mImage Load (1.9ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/auth_controller.rb:12
+  [1m[36mLanguage Load (0.7ms)[0m  [1m[34mSELECT "languages".* FROM "languages" INNER JOIN "project_languages" ON "languages"."id" = "project_languages"."language_id" WHERE "project_languages"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/auth_controller.rb:12
+  [1m[36mTask Load (1.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/auth_controller.rb:12
+Completed 202 Accepted in 259ms (Views: 5.5ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/api/v1/users" for ::1 at 2019-10-01 13:00:37 -0400
+Processing by Api::V1::UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:16
+  [1m[36mImage Load (4.2ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/users_controller.rb:16
+  [1m[36mLanguage Load (0.6ms)[0m  [1m[34mSELECT "languages".* FROM "languages" INNER JOIN "project_languages" ON "languages"."id" = "project_languages"."language_id" WHERE "project_languages"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/users_controller.rb:16
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/users_controller.rb:16
+Completed 200 OK in 38ms (Views: 0.1ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 13:00:38 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (1.0ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 30ms (Views: 23.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 13:00:42 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (1.5ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 12ms (Views: 4.7ms | ActiveRecord: 1.9ms)
+
+
+Started PATCH "/api/v1/tasks/47" for ::1 at 2019-10-01 13:00:47 -0400
+Processing by Api::V1::TasksController#update as */*
+  Parameters: {"is_complete"=>true, "id"=>"47", "task"=>{"is_complete"=>true}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 105], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[36mTask Update (0.7ms)[0m  [1m[33mUPDATE "tasks" SET "is_complete" = $1 WHERE "tasks"."id" = $2[0m  [["is_complete", true], ["id", 47]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 105], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:13
+  [1m[36mImage Load (1.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:14
+  [1m[36mLanguage Load (0.6ms)[0m  [1m[34mSELECT "languages".* FROM "languages" INNER JOIN "project_languages" ON "languages"."id" = "project_languages"."language_id" WHERE "project_languages"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:14
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:14
+Completed 200 OK in 22ms (Views: 0.1ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 13:00:55 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.4ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 6ms (Views: 2.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 13:01:16 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.6ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 7ms (Views: 2.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 13:01:26 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.5ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 7ms (Views: 2.7ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/api/v1/tasks/47" for ::1 at 2019-10-01 13:01:32 -0400
+Processing by Api::V1::TasksController#update as */*
+  Parameters: {"is_complete"=>false, "id"=>"47", "task"=>{"is_complete"=>false}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 105], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[36mTask Update (0.7ms)[0m  [1m[33mUPDATE "tasks" SET "is_complete" = $1 WHERE "tasks"."id" = $2[0m  [["is_complete", false], ["id", 47]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 105], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:13
+  [1m[36mImage Load (3.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:14
+  [1m[36mLanguage Load (0.5ms)[0m  [1m[34mSELECT "languages".* FROM "languages" INNER JOIN "project_languages" ON "languages"."id" = "project_languages"."language_id" WHERE "project_languages"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:14
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:14
+Completed 200 OK in 37ms (Views: 0.1ms | ActiveRecord: 7.5ms)
+
+
+Started PATCH "/api/v1/tasks/47" for ::1 at 2019-10-01 13:03:30 -0400
+Processing by Api::V1::TasksController#update as */*
+  Parameters: {"is_complete"=>true, "id"=>"47", "task"=>{"is_complete"=>true}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 105], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[36mTask Update (0.6ms)[0m  [1m[33mUPDATE "tasks" SET "is_complete" = $1 WHERE "tasks"."id" = $2[0m  [["is_complete", true], ["id", 47]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 105], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:13
+  [1m[36mImage Load (1.8ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:14
+  [1m[36mLanguage Load (0.3ms)[0m  [1m[34mSELECT "languages".* FROM "languages" INNER JOIN "project_languages" ON "languages"."id" = "project_languages"."language_id" WHERE "project_languages"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:14
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:14
+Completed 200 OK in 37ms (Views: 0.5ms | ActiveRecord: 5.1ms)
+
+
+Started PATCH "/api/v1/tasks/47" for ::1 at 2019-10-01 13:03:35 -0400
+Processing by Api::V1::TasksController#update as */*
+  Parameters: {"is_complete"=>false, "id"=>"47", "task"=>{"is_complete"=>false}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 105], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[36mTask Update (0.5ms)[0m  [1m[33mUPDATE "tasks" SET "is_complete" = $1 WHERE "tasks"."id" = $2[0m  [["is_complete", false], ["id", 47]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/tasks_controller.rb:12
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 105], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:13
+  [1m[36mImage Load (1.2ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:14
+  [1m[36mLanguage Load (0.3ms)[0m  [1m[34mSELECT "languages".* FROM "languages" INNER JOIN "project_languages" ON "languages"."id" = "project_languages"."language_id" WHERE "project_languages"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:14
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = $1[0m  [["project_id", 105]]
+  ↳ app/controllers/api/v1/tasks_controller.rb:14
+Completed 200 OK in 20ms (Views: 0.1ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 13:14:42 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (3.0ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 20ms (Views: 3.7ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 13:14:54 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.6ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 7ms (Views: 2.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 13:14:58 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.5ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 7ms (Views: 2.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 13:15:11 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.4ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 6ms (Views: 2.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 13:16:05 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.5ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 7ms (Views: 2.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 13:16:10 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.4ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 7ms (Views: 3.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 13:16:15 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.5ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 7ms (Views: 2.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 13:19:46 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.7ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 24ms (Views: 13.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 13:20:40 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (2.5ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 10ms (Views: 2.9ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 13:21:08 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.5ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 6ms (Views: 2.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 13:22:07 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.5ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 6ms (Views: 2.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 13:22:15 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.7ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 7ms (Views: 2.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 13:22:47 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.5ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 7ms (Views: 1.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/languages" for ::1 at 2019-10-01 13:23:07 -0400
+Processing by Api::V1::LanguagesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31
+  [1m[36mLanguage Load (0.4ms)[0m  [1m[34mSELECT "languages".* FROM "languages"[0m
+  ↳ app/controllers/api/v1/languages_controller.rb:4
+Completed 200 OK in 8ms (Views: 3.2ms | ActiveRecord: 0.7ms)
+
+

@@ -9,12 +9,16 @@ class Api::V1::TasksController < ApplicationController
 
     def update
         @task = Task.find(params[:id])
-        @task.update(name: params[:name], priority:params[:priority], due_date:params[:due_date])
-        @project = Project.find(params[:project_id])
+        @task.update(task_params)
+        @project = Project.find(@task.project_id)
         render json: @project.to_json(project_serializer_options)
     end
 
     private
+
+    def task_params
+        params.require(:task).permit(:name, :priotity, :due_date, :is_complete)
+    end
 
     def project_serializer_options
         {:include => {
