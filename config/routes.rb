@@ -8,6 +8,7 @@ Rails.application.routes.draw do
       resources :projects, only: [:create, :index, :destroy, :update]
       resources :languages, only: [:index]
       resources :tasks, only: [:destroy, :update]
+      resources :images, only: [:destroy]
       post '/add_image', to: 'projects#add_img'
       post '/add_task', to: 'projects#add_task'
     end

@@ -26,6 +26,7 @@ class Api::V1::ProjectsController < ApplicationController
       end
 
       def update
+
         @project = Project.find(params[:project_id])
         @project.update(project_params)
         @project.languages.destroy_all
@@ -64,7 +65,7 @@ class Api::V1::ProjectsController < ApplicationController
       end
 
       def project_params
-        params.require(:project).permit(:name, :description, :start_date, :end_date)
+        params.require(:project).permit(:name, :description, :start_date, :end_date, :is_complete)
       end
 
    
