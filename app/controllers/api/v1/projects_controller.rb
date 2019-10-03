@@ -1,7 +1,10 @@
 class Api::V1::ProjectsController < ApplicationController
     def create
         @project = @user.projects.create(project_params)
-        params[:selected].each{|language| @project.languages.create(name: language) }
+        params[:selected].each do  |language| 
+          @language = Language.find_by(name: language)
+          ProjectLanguage.create(language_id:@language.id, project_id: @project.id)
+        end
         render json: @project.to_json(project_serializer_options)
       end
 
@@ -27,7 +30,10 @@ class Api::V1::ProjectsController < ApplicationController
         @project.update(project_params)
         @project.languages.destroy_all
         if params[:languages]
-         params[:languages].each{|language| @project.languages.create(name: language) }
+          params[:languages].each do  |language| 
+            @language = Language.find_by(name: language)
+            ProjectLanguage.create(language_id:@language.id, project_id: @project.id)
+          end
         end
         render json: @project.to_json(project_serializer_options)
 
